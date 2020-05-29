@@ -1,0 +1,76 @@
+@import "./../../style/custom-variables.scss";
+@import "./../../style/custom-utilities.scss";
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    // border-bottom: 1px solid $color-border-gray;
+    border-bottom: 1px solid $color-grey-light-2;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    .header-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: $font-family-lobster;
+      font-size: $font-2point5rem;
+      height: 100%;
+      flex: 1;
+      padding: $padding-1rem;
+      background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header-list {
+      display: flex;
+      flex: 12;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      &-item {
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        height: 100%;
+        color: $color-primary-light;
+        padding: 0;
+        margin: 0;
+        & > li {
+          display: flex;
+          border-bottom: 2px solid transparent;
+          font-size: $font-2rem;
+          justify-content: center;
+          align-items: center;
+          font-family: $font-family-lobster;
+          text-transform: capitalize;
+          padding: $padding-1rem;
+          height: 100%;
+          cursor: pointer;
+          &:hover {
+            border-bottom: 2px solid $color-primary-dark;
+          }
+        }
+      }
+    }
+    .header-social {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      font-size: $font-2point5rem;
+      color: $Color-fb;
+      cursor: pointer;
+    }
+  }
+}

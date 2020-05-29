@@ -1,0 +1,64 @@
+@import "./../../../style/custom-variables.scss";
+@import "./../../../style/custom-animations.scss";
+.header-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.4),
+      rgba($color-primary-dark, 0.4)
+    ),
+    url("./background.jpg");
+  position: relative;
+  .header-box {
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    line-height: 1.5;
+    font-family: $font-family-lobster;
+    padding: 2rem;
+    color: $color-grey-light-2;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-dark, 0.4),
+      rgba($color-primary-light, 0.4)
+    );
+    border-radius: 0.5rem;
+    .header-text-heading-primary {
+      font-size: 5rem;
+      letter-spacing: 3px;
+      // filter: blur(3px);
+      // background: fade-in(red, 1);
+    }
+    .header-text-heading-secondary {
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+    .header-text-heading-typewriter {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+  }
+}
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  color: $color-primary-dark;
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

@@ -1,0 +1,118 @@
+@import "./../../../style/custom-variables.scss";
+@import "./../../../style/custom-animations.scss";
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+
+  .profile-info {
+    display: flex;
+    // border: 1px solid red;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    &-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      height: fit-content;
+      // border: 1px solid $color-grey-dark;
+      // background-color: white;
+      background-color: transparent;
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.1) 20%,
+        rgba(255, 255, 255, 0.5) 60%
+      );
+      // background-color: red;
+      border-radius: 4rem;
+      box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2) inset,
+        -8px -8px 18px 0 rgba(255, 255, 255, 0.55) inset;
+      padding: 4rem;
+      .profile-pic {
+        display: flex;
+        border-radius: 100%;
+        text-align: center;
+        // border: 1px solid red;
+        // background-color: blue;
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(0, 0, 0, 0.1) 20%,
+          rgba(255, 255, 255, 0.5) 60%
+        );
+        box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2) inset,
+          -8px -8px 18px 0 rgba(255, 255, 255, 0.55) inset;
+      }
+      .profile-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        text-align: justify;
+        text-align-last: center;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+      }
+      .profile-contact {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        &-icon {
+          display: flex;
+          color: $color-whatsapp;
+          // background-color: #455a64;
+          border-radius: 100%;
+          font-size: 2rem;
+        }
+        &-no {
+          display: flex;
+          font-size: 1.6rem;
+          margin-left: 0.5rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .profile-skill {
+    display: flex;
+    // border: 1px solid red;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    &-heading {
+      display: flex;
+      font-family: $font-family-lobster;
+      border-bottom: 1px solid $color-border-gray;
+      width: 100%;
+      justify-content: center;
+      // padding: 0.5rem;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    &-box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: fit-content;
+      margin-top: 2rem;
+    }
+  }
+}
+.aboutUs-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  background-color: #e6e6e6;
+  align-items: center;
+  .aboutUs-heading {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    border-bottom: 1px solid $color-grey-dark-2;
+    margin-top: 5rem;
+    font-family: $font-family-lobster;
+    font-size: 2.5rem;
+  }
+}
