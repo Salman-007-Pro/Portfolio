@@ -1,23 +1,11 @@
-@import "../../style/custom-variables.scss";
-.skill-box {
-  display: flex;
-  flex-direction: row;
+.progressbar-wrapper {
+  width: 100%;
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
-  .skill-heading {
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-    // border: 1px solid blue;
-    text-transform: uppercase;
+  .progressbar-title {
+    text-align: left;
+    text-transform: capitalize;
     font-weight: 500;
-  }
-  .skill-bar {
-    display: flex;
-    flex: 5;
-    align-items: center;
-    // border: 1px solid yellow;
-    padding-left: 0.5rem;
   }
 }

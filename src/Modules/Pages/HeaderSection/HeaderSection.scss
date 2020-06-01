@@ -15,15 +15,10 @@
     url("./background.jpg");
   position: relative;
   .header-box {
-    display: flex;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    flex-direction: column;
-    width: fit-content;
-    align-items: center;
-    line-height: 1.5;
     font-family: $font-family-lobster;
     padding: 2rem;
     color: $color-grey-light-2;
@@ -36,8 +31,6 @@
     .header-text-heading-primary {
       font-size: 5rem;
       letter-spacing: 3px;
-      // filter: blur(3px);
-      // background: fade-in(red, 1);
     }
     .header-text-heading-secondary {
       font-size: 3rem;
@@ -53,12 +46,20 @@
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
   color: $color-primary-dark;
 }
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
+@media (max-width: 600px) {
+  .header-box {
+    top: 60% !important;
+    .header-text-heading-primary {
+      font-size: 3rem !important;
+      letter-spacing: 1px;
+    }
+    .header-text-heading-secondary {
+      font-size: 2rem !important;
+      letter-spacing: 0px;
+    }
+    .header-text-heading-typewriter {
+      font-size: 1rem !important;
+      letter-spacing: 1px;
+    }
   }
 }
