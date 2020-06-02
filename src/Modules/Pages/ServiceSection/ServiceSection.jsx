@@ -11,8 +11,8 @@ class ServiceSection extends Component {
             <h1>Service</h1>
           </Col>
         </Row>
-        <Row justify="center" style={{ marginTop: "5rem" }}>
-          <Col flex={1} className="card-setting">
+        <Row justify="space-around" style={{ marginTop: "5rem" }}>
+          <Col flex="270px" className="card-setting">
             <Row justify="center">
               <Card
                 hoverable
@@ -29,7 +29,7 @@ class ServiceSection extends Component {
               </Card>
             </Row>
           </Col>
-          <Col flex={1} className="card-setting">
+          <Col flex="270px" className="card-setting">
             <Row justify="center">
               <Card
                 hoverable
@@ -44,7 +44,7 @@ class ServiceSection extends Component {
               </Card>
             </Row>
           </Col>
-          <Col flex={1} className="card-setting">
+          <Col flex="270px" className="card-setting">
             <Row justify="center">
               <Card
                 hoverable

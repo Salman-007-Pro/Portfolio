@@ -1,0 +1,19 @@
+@import "./../../../style/custom-variables.scss";
+@import "./../../../style/custom-animations.scss";
+.footer-wrapper {
+  background-color: $color-primary-light;
+  .footer-heading {
+    border-bottom: 1px solid $color-grey-light-1;
+    font-family: $font-family-lobster;
+    font-size: 2.5rem;
+  }
+  .social-item {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .footer-name {
+    font-family: $font-family-lobster;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}

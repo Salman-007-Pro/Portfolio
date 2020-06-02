@@ -55,14 +55,14 @@ class Header extends Component {
                     </Col>
                     <Col flex={1} className="nav-item">
                       <Row justify="center" align="middle">
-                        <a href="#service" className="nav-item-color">
+                        <a href="#education" className="nav-item-color">
                           Education
                         </a>
                       </Row>
                     </Col>
                     <Col flex={1} className="nav-item">
                       <Row justify="center" align="middle">
-                        <a href="#service" className="nav-item-color">
+                        <a href="#portfolio" className="nav-item-color">
                           Porfolio
                         </a>
                       </Row>

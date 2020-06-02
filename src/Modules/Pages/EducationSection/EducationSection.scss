@@ -1,0 +1,58 @@
+@import "./../../../style/custom-variables.scss";
+@import "./../../../style/custom-animations.scss";
+.education-wrapper {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center top;
+  // background-size: cover;
+  object-fit: fill;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.5),
+      rgba($color-primary-dark, 0.5)
+    ),
+    url("./educationbg.jpg");
+  text-align: center;
+  padding: 8rem 0;
+  .education-heading {
+    border-bottom: 1px solid $color-grey-light-1;
+    font-family: $font-family-lobster;
+    font-size: 2.5rem;
+  }
+  .education-card-wrapper {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(230, 230, 230, 0.8),
+      rgba(230, 230, 230, 0.8)
+    );
+    font-family: $font-family-lobster;
+    transition: all 0.3s;
+    border-radius: 0.5rem;
+    width: 100%;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 3px 3px 6px $color-primary-dark;
+    }
+    .education-card-heading {
+      width: 90%;
+      text-transform: capitalize;
+      padding: 0.5rem 0;
+      background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-bottom: 1px solid $color-grey-dark;
+    }
+    .education-card-year {
+      width: 100%;
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .education-card-context {
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+      margin-top: 1rem;
+    }
+  }
+}

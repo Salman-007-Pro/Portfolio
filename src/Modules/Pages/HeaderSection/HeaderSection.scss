@@ -63,3 +63,22 @@
     }
   }
 }
+.goto-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: $color-grey-dark-2;
+  border-radius: 100%;
+  color: $color-primary;
+  font-size: 1.6rem;
+}
+.download-cv {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  color: $color-grey-light-3 !important;
+  border: none !important;
+  font-size: 1.6rem !important;
+  background-color: $color-primary !important;
+}

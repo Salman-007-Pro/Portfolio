@@ -31,6 +31,13 @@ h6 {
 p {
   color: #000000;
 }
+a,
+a:hover,
+a:active {
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  text-decoration: none;
+}
 .container {
   max-width: 80%;
   position: relative;
