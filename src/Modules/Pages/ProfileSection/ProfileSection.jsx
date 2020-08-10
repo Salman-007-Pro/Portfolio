@@ -23,10 +23,11 @@ const ProfileSection = (props) => {
           </Row>
           <Row justify="center" className="profile-text-resp">
             <p>
-              Hi, I'm Muhammad Salman Asif and I'm a react web developer with 6 month experiences. I
-              have fully controlled redux, route libraries and I have done several projects on react
-              web app. Currently, I'm working on my final year project fully based on the react
-              library and I'm a final year student looking for a job opportunity.
+              Hi, I'm Muhammad Salman Asif and I'm a react web developer with 6 months experience. I
+              have excellent command over redux, route libraries, and have done several projects on
+              react web app. Currently, I'm working on my final year project which is based on the
+              react library. I'm about to complete my graduation and looking forward to the job
+              opportunity.
             </p>
           </Row>
           <Row justify="center" align="middle" className="profile-contact-resp">
