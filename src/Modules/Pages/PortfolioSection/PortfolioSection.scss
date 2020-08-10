@@ -38,10 +38,18 @@
       height: 250px;
       padding: 0.5rem 0;
       border-bottom: 1px solid $color-grey-dark;
-      background-image: url("./portfolio1.JPG");
       background-size: cover;
       background-position: center;
       border-radius: 0.5rem 0.5rem 0 0;
+    }
+    #img-1 {
+      background-image: url("./portfolio1.JPG");
+    }
+    #img-2 {
+      background-image: url("./bowwow.PNG");
+    }
+    #img-3 {
+      background-image: url("./inApp.PNG");
     }
     .portfolio-card-heading {
       width: 100%;
