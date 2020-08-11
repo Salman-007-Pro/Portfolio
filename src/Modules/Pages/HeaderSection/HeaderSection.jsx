@@ -5,9 +5,10 @@ import { Row, Col, Button } from "antd";
 import "./HeaderSection.scss";
 import { BackTop } from "antd";
 import { CaretUpOutlined, DownloadOutlined } from "@ant-design/icons";
-import PDF from "assets/resume/resume.pdf";
+// import PDF from "assets/resume/resume.pdf";
 class HeaderSection extends Component {
   render() {
+    const PDF = require("./../../../assets/resume/resume.pdf");
     return (
       <>
         <div className="header-section-wrapper">
@@ -34,7 +35,7 @@ class HeaderSection extends Component {
                 />
               </Row>
               <Row justify="center">
-                <a href={PDF} download>
+                <a href={PDF} download="resume.pdf">
                   <Button
                     type="primary"
                     shape="square"
