@@ -8,8 +8,8 @@ import { CaretUpOutlined, DownloadOutlined } from "@ant-design/icons";
 // import PDF from "./resume.pdf";
 class HeaderSection extends Component {
   render() {
-    const pdf = require("./resume.pdf");
-    console.log(pdf);
+    // const pdf = require("./resume.pdf");
+    // console.log(pdf);
     return (
       <>
         <div className="header-section-wrapper">
@@ -36,7 +36,7 @@ class HeaderSection extends Component {
                 />
               </Row>
               <Row justify="center">
-                <a href={pdf} download="resume.pdf">
+                <a href="./resume.pdf" download="resume.pdf">
                   <Button
                     type="primary"
                     shape="square"
