@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Container from "components/Container/Container";
 import { FacebookFilled, MenuOutlined } from "@ant-design/icons";
 import { Row, Col } from "antd";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 class Header extends Component {
   state = {
@@ -71,9 +72,11 @@ class Header extends Component {
                 </Col>
                 <Col flex={1}>
                   <Row justify="center" align="middle" style={{ height: "100%" }}>
-                    <div className="nav-social-link">
-                      <FacebookFilled />
-                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=100015273218086">
+                      <div className="nav-social-link">
+                        <FacebookFilled />
+                      </div>
+                    </a>
                   </Row>
                 </Col>
               </Row>
